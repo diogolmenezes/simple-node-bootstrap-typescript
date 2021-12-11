@@ -8,7 +8,7 @@
             "name": "Debug on Localhost",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/index.js",
+            "program": "${workspaceRoot}/dist/index.js",
             "env": {
                 "NODE_ENV": "default"
             }
@@ -35,11 +35,10 @@
             "name": "Debug Unit Test",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-            "args": [
-                "${workspaceFolder}/api/**/*.unit.js",
-                "--no-timeouts"
-            ]
+            "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+            "env": {
+                "NODE_ENV": "testing"
+            }
         },
         {
             "name": "Debug Integrated Test",

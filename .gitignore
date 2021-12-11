@@ -3,3 +3,5 @@ node_modules/
 logs/*.log*
 test-reports/
 .nyc_output/
+coverage/
+dist/

@@ -1,7 +1,6 @@
 const { BaseRepository } = require('simple-node-framework').Base;
 const customerModel = require('../model/customer');
 
-
 // sample repository
 class CustomerRepository extends BaseRepository {
     constructor() {

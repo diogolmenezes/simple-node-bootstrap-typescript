@@ -17,39 +17,8 @@ module.exports = {
         ],
         exposeHeaders: []
     },
-    db: {
-        mongodb: {
-            application: {
-                url: 'mongodb://localhost:27017/my-application',
-                options: {
-                    poolSize: 10,
-                    keepAlive: 300000,
-                    useNewUrlParser: true,
-                    autoReconnect: true,
-                    reconnectInterval: 60000,
-                    reconnectTries: 1440,
-                    connectTimeoutMS: 30000
-                }
-            }
-        }
-    },
-    redis: {
-        host: 'localhost',
-        ttl: 86400,
-        port: 6379
-    },
-    cache: {
-        enabled: true,
-        ttl: 1800,
-        headerKey: 'x-identifier'
-    },
-    session: {
-        prefix: 'myapplication',
-        headerKey: 'x-identifier',
-        ttl: 3600
-    },
     log: {
-        debug: true,
+        debug: false,
         bunyan: {
             name: 'Application',
             streams: [

@@ -1,5 +1,7 @@
 const customServer = require('./api/config/custom-server');
 
+require('dotenv').config();
+
 const { server, baseServer: restify } = customServer;
 
 // serving the swagger documentation

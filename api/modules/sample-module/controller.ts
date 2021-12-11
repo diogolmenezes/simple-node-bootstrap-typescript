@@ -1,5 +1,5 @@
 const { BaseController } = require('simple-node-framework').Base;
-const CustomerService = require('./service/customer-service');
+const CustomerService = require('../../service/customer-service');
 
 // sample controller
 class Controller extends BaseController {
@@ -10,7 +10,7 @@ class Controller extends BaseController {
         this.service = new CustomerService();
     }
 
-    async load(req, res, next) {
+    async load(req: any, res: any, next: any) {
         super.activateRequestLog(req); // this will automatically put the request-id on all logs
 
         const { name } = req.params;
@@ -32,4 +32,4 @@ class Controller extends BaseController {
     }
 }
 
-module.exports = Controller;
+export default Controller;
