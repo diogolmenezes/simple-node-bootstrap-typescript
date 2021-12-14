@@ -2,7 +2,7 @@
   "name": "my-application",
   "version": "1.0.0",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only ./index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only ./index.ts",
     "compile": "rm -rf ./dist/*; tsc"
   },
   "dependencies": {

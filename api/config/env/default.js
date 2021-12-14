@@ -48,8 +48,8 @@ module.exports = {
             '/doc/'
         ],
         require: {
-            application: true,
-            channel: true,
+            application: false,
+            channel: false,
             device: false
         }
     }

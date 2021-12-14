@@ -1,5 +1,4 @@
 import Controller from '../../controller';
-
 const controller = new Controller();
 
 test('Should return 200 and have the correct name', () => {

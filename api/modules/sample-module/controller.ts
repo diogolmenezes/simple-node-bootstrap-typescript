@@ -10,7 +10,7 @@ class Controller extends BaseController {
         this.service = new CustomerService();
     }
 
-    async load(req: any, res: any, next: any) {
+    async load(req, res, next) {
         super.activateRequestLog(req); // this will automatically put the request-id on all logs
 
         const { name } = req.params;

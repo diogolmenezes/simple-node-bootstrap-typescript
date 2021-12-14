@@ -5,14 +5,15 @@ const CustomerRepository = require('../repository/customer-repository');
 class CustomerService extends BaseService {
     constructor() {
         super({
-            module: 'Customer Service' // the module name will prefix all your logs
+            module: 'Customer Service'
         });
         this.repository = new CustomerRepository();
     }
 
     async loadByName(name) {
         this.log.debug(`Loading customer [${name}]`);
-        return this.repository.loadByName(name);
+        return { name: 'diogo menezes' };
+        // return this.repository.loadByName(name);
     }
 }
 
